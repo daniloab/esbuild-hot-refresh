@@ -1,0 +1,53 @@
+Arguments: 
+  /Users/daniloassis/.nvm/versions/node/v16.16.0/bin/node /opt/homebrew/bin/yarn
+
+PATH: 
+  /Users/daniloassis/.cargo/bin:/Users/daniloassis/.autojump/bin:/Users/daniloassis/.nvm/versions/node/v16.16.0/bin:/Users/daniloassis/Android/sdk/platform-tools:/Users/daniloassis/Android/sdk/tools:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/local/bin:/opt/local/sbin:/usr/local/go/bin:/Library/Apple/usr/bin:/usr/local/opt/node@16/bin:/Users/daniloassis/Android/Sdk/emulator:/Users/daniloassis/Android/Sdk/tools:/Users/daniloassis/Android/Sdk/tools/bin:/Users/daniloassis/Android/Sdk/platform-tools
+
+Yarn version: 
+  1.22.11
+
+Node version: 
+  16.16.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  SyntaxError: /Users/daniloassis/Documents/projects/dab/opensource/esbuild-hot-refresh/package.json: Unexpected token . in JSON at position 119
+      at JSON.parse (<anonymous>)
+      at /opt/homebrew/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/opt/homebrew/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /opt/homebrew/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "esbuild-hot-refresh",
+    "version": "0.1.0",
+    "scripts": {
+      "start:esbuild": "node ./esbuild.mjs",
+      ...
+    },
+    "dependencies": {
+      "chalk": "^4.1.2",
+      ...
+    },
+    "devDependencies": {
+      ...
+      "esbuild-plugin-clean": "^0.9.0",
+      "esbuild-plugin-copy": "^1.2.1",
+      "esbuild": "^0.14.29",
+      "commander": "^8.3.0",
+      "eslint": "^8.9.0",
+      "ts-node": "^10.5.0",
+      "typescript": "^4.5.5",
+      "moment": "^2.29.1",
+      ...
+    }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
